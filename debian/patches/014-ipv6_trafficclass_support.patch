@@ -4,11 +4,11 @@ Description: IPv6 traffic class support
 From: http://sourceforge.net/p/iperf/patches/25/
 Date: 2012-10-02
 
-Index: iperf-2.0.12+dfsg1/src/PerfSocket.cpp
+Index: iperf-2.0.13+dfsg1/src/PerfSocket.cpp
 ===================================================================
---- iperf-2.0.12+dfsg1.orig/src/PerfSocket.cpp	2018-07-12 16:11:54.144347096 +0200
-+++ iperf-2.0.12+dfsg1/src/PerfSocket.cpp	2018-07-12 16:11:54.140347074 +0200
-@@ -149,9 +149,19 @@
+--- iperf-2.0.13+dfsg1.orig/src/PerfSocket.cpp	2019-01-23 18:26:36.335695523 +0100
++++ iperf-2.0.13+dfsg1/src/PerfSocket.cpp	2019-01-23 18:26:36.327695462 +0100
+@@ -156,9 +156,19 @@
      if ( inSettings->mTOS > 0 ) {
          int  tos = inSettings->mTOS;
          Socklen_t len = sizeof(tos);

@@ -7,16 +7,16 @@ Author: Roberto Lumbreras <rover@debian.org>
 Bug-Debian: http://bugs.debian.org/346099
 Forwarded: https://sourceforge.net/tracker/index.php?func=detail&aid=3140391&group_id=128336&atid=711371
 
-Index: iperf-2.0.12+dfsg1/src/Settings.cpp
+Index: iperf-2.0.13+dfsg1/src/Settings.cpp
 ===================================================================
---- iperf-2.0.12+dfsg1.orig/src/Settings.cpp	2018-07-12 16:01:38.440918388 +0200
-+++ iperf-2.0.12+dfsg1/src/Settings.cpp	2018-07-12 16:01:38.436918365 +0200
-@@ -523,7 +523,7 @@
+--- iperf-2.0.13+dfsg1.orig/src/Settings.cpp	2019-01-23 18:59:02.446590822 +0100
++++ iperf-2.0.13+dfsg1/src/Settings.cpp	2019-01-23 18:59:09.970645835 +0100
+@@ -517,7 +517,7 @@
              // time mode (instead of amount mode), units is 10 ms
              setModeTime( mExtSettings );
              setServerModeTime( mExtSettings );
 -            mExtSettings->mAmount = (int) (atof( optarg ) * 100.0);
-+            mExtSettings->mAmount = (max_size_t) (atof( optarg ) * 100.0);
++            mExtSettings->mAmount = (size_t) (atof( optarg ) * 100.0);
              break;
  
          case 'u': // UDP instead of TCP

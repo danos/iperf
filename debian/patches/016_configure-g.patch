@@ -1,0 +1,18 @@
+Description: fix configure.ac
+ fix configure deleting -g flag from *FLAGS
+Author: Roberto Lumbreras
+
+Index: iperf-2.0.12+dfsg1/configure.ac
+===================================================================
+--- iperf-2.0.12+dfsg1.orig/configure.ac	2018-07-16 15:51:23.195211602 +0200
++++ iperf-2.0.12+dfsg1/configure.ac	2018-07-31 23:53:40.289446765 +0200
+@@ -73,9 +73,7 @@
+ dnl ===================================================================
+ 
+ AC_PROG_CXX
+-CXXFLAGS=`echo " $CXXFLAGS " | sed -e "s/ -g / /"` # do not want it implicitly
+ AC_PROG_CC
+-CFLAGS=`echo " $CFLAGS " | sed -e "s/ -g / /"` # do not want it implicitly
+ AC_ISC_POSIX
+ AC_PROG_INSTALL
+ AC_PROG_MAKE_SET

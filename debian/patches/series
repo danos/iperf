@@ -1,7 +1,7 @@
 001-cast-to-max_size_t-instead-of-int.patch
 002-spellcheck.patch
 003-fix-hyphen-used-as-minus-sign.patch
+004-fix-man-break-lines.patch
 013-delete-service.patch
 014-ipv6_trafficclass_support.patch
-015_have_struct_sockaddr_in_sin_len.patch
-For-Dual-and-TradeOff-tests-we-can-t-use-itimer-in-t.patch
+016_configure-g.patch

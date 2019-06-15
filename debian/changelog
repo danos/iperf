@@ -1,9 +1,13 @@
-iperf (2.0.12+dfsg1-2danos1) unstable; urgency=medium
+iperf (2.0.13+dfsg1-1) unstable; urgency=low
 
-  * For Dual and TradeOff tests we can't use itimer in the Client
-  * Refresh patch
+  * New upstream version. (Closes: #930386, #930390)
+  * Updated standards.
+  * Use upstream fix for compilation on kfreebsd-amd64.
+  * Use only debhelper, compat 11.
+  * Fix building without -g flag.
+  * Updated debian/copyright.
 
- -- Daniel Gollub <dgollub@att.com>  Thu, 09 Jul 2020 11:10:36 +0200
+ -- Roberto Lumbreras <rover@debian.org>  Sat, 15 Jun 2019 23:18:33 +0200
 
 iperf (2.0.12+dfsg1-2) unstable; urgency=low
 
