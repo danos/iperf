@@ -1,3 +1,10 @@
+iperf (2.0.12+dfsg1-2danos1) unstable; urgency=medium
+
+  * For Dual and TradeOff tests we can't use itimer in the Client
+  * Refresh patch
+
+ -- Daniel Gollub <dgollub@att.com>  Thu, 09 Jul 2020 11:10:36 +0200
+
 iperf (2.0.12+dfsg1-2) unstable; urgency=low
 
   * Fix compilation on kfreebsd-amd64.
