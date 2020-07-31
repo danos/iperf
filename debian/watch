@@ -1,3 +1,0 @@
-version=3
-opts="uversionmangle=s/b\d$//,dversionmangle=s/\+dfsg\d*$//" \
-    http://sf.net/iperf2/iperf-?_?([\w+\d+\.]+|\d+)(?:\.tar|\.tgz)(?:\.gz|\.bz2|)
